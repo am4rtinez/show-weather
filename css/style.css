@@ -1,4 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo|Cabin|Catamaran|Open+Sans|Roboto');
 #map {
   height: 700px;
   margin: 0px;
+}
+
+.temp {
+  z-index: -1;
+  margin: auto;
+  padding: 2px 5px 2px 5px;
+  /*background-color: #000000;*/
+  background-color: #FF4000;
+  color: white;
+  font-weight: bold;
+  width: auto;
+  font-family: 'Open Sans';
+  font-size: 12px;
+}
+
+.city {
+  z-index: -2;
+  padding: 2px 5px 2px 5px;
+  margin: auto;
+  background-color: #FF4000;
+  color: white;
+  width: auto;
+  font-family: 'Open Sans';
+  font-size: 12px;
 }
