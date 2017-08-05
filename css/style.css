@@ -4,26 +4,111 @@
   margin: 0px;
 }
 
-.temp {
+.weather-data{
+  box-shadow: 1px 1px 5px 0 rgba(0,0,0,.3);
+  display: block;
+}
+
+.temp, .city {
   z-index: -1;
   margin: auto;
   padding: 2px 5px 2px 5px;
-  /*background-color: #000000;*/
-  background-color: #FF4000;
-  color: white;
   font-weight: bold;
-  width: auto;
   font-family: 'Open Sans';
   font-size: 12px;
+	display: inline-block;
+  text-align: center !important;
 }
 
 .city {
-  z-index: -2;
-  padding: 2px 5px 2px 5px;
-  margin: auto;
-  background-color: #FF4000;
+  background-color: #000;
   color: white;
-  width: auto;
-  font-family: 'Open Sans';
-  font-size: 12px;
 }
+
+.control-legend {
+  width: 360px;
+  background: #FFF;
+  border:2px solid #FFF;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px 1px rgba(0,0,0,.5);
+  display: block;
+  padding: 5px;
+}
+
+.scale-value {
+  line-height: 100%;
+  vertical-align: top;
+}
+
+.color-scale-line{
+  background-image: linear-gradient(to right,
+    #7F3D93 0%,
+    #9C3FB8 5%,
+    #9f55b5 10%,
+    #2C6ABB 15%,
+    #528bd5 20%,
+    #67a3de 25%,
+    #8ecaf0 30%,
+    #9bd5f4 35%,
+    #ace1fd 40%,
+    #c2eaff 45%,
+    #ffffff 50%,
+    #ffffd0 55%,
+    #fee892 60%,
+    #fee270 65%,
+    #fdd461 70%,
+    #f4a85e 75%,
+    #f48159 80%,
+    #F57061 85%,
+    #f46859 90%,
+    #f44c49 95%,
+    #F5231F 100%);
+  width: 100%;
+  position: inherit;
+  height: 15px;
+  border: 1px solid #777;
+}
+
+.min-value{
+  left: 0;
+  position: absolute;
+  color: white;
+  font-weight: bold;
+}
+
+.avg-value {
+  right: 48%;
+  position: absolute;
+  color: black;
+  font-weight: bold;
+}
+
+.max-value{
+  right: 0;
+  position: absolute;
+  color: black;
+  font-weight: bold;
+}
+
+/* =========Esquema colores temp==========*/
+.c-min-50{background-color: #7F3D93; color: white;}
+.c-min-45{background-color: #9C3FB8; color: white;}
+.c-min-40{background-color: #9f55b5; color: white;}
+.c-min-35{background-color: #2C6ABB; color: white;}
+.c-min-30{background-color: #528bd5; color: white;}
+.c-min-25{background-color: #67a3de; color: black;}
+.c-min-20{background-color: #8ecaf0; color: black;}
+.c-min-15{background-color: #9bd5f4; color: black;}
+.c-min-10{background-color: #ace1fd; color: black;}
+.c-min-5{background-color: #c2eaff; color: black;}
+.c-0{background-color: #ffffff; color: black;}
+.c-plus-5{background-color: #ffffd0; color: black;}
+.c-plus-10{background-color: #fee892; color: black;}
+.c-plus-15{background-color: #fee270; color: black;}
+.c-plus-20{background-color: #fdd461; color: black;}
+.c-plus-25{background-color: #f4a85e; color: black;}
+.c-plus-30{background-color: #f48159; color: black;}
+.c-plus-35{background-color: #F57061; color: white;}
+.c-plus-40{background-color: #f46859; color: white;}
+.c-plus-45{background-color: #f44c49; color: white;}
+.c-plus-50{background-color: #F5231F; color: white;}
