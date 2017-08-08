@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Baloo|Cabin|Catamaran|Open+Sans|Roboto');
+body{
+  background-color: #2E2E2E;
+  font-family: 'Open Sans';
+}
+
 #map {
   height: 700px;
   margin: 0px;
@@ -7,6 +12,19 @@
 .weather-data{
   box-shadow: 1px 1px 5px 0 rgba(0,0,0,.3);
   display: block;
+}
+
+.weather-city{
+  box-shadow: 1px 1px 5px 0 rgba(0,0,0,.3);
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+
+.weather-city h2 {
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .temp, .city {
